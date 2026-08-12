@@ -2,7 +2,6 @@
 return the size k of non duplicate elemets after removing
 */
 
-
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
