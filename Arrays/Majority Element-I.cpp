@@ -26,3 +26,50 @@ that's why we are using this algo.
 which element remains then count its frequency if it is more then n/2 then this is the ans.
 
 */
+
+class Solution {
+public:
+    int majorityElement(vector<int>& arr) {
+
+        int n = arr.size();
+        int ele;
+        int count = 0;
+
+        for(int i = 0; i<n; i++)
+        {
+            if(count ==0)
+            {
+                ele = arr[i];
+                count = 1;
+            }
+
+            else if(ele == arr[i])
+            {
+                count++;
+            }
+
+            else
+            {
+                count--;
+            }
+        }
+
+        int count_ele = 0;
+
+        for(int i = 0; i<n; i++)
+        {
+            if(arr[i] == ele)
+            {
+                count_ele++;
+            }
+        }
+
+        if(count_ele > (n/2))
+        return ele;
+
+
+        return -1;
+        
+     
+    }
+};
