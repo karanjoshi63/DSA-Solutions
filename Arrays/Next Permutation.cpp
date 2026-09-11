@@ -16,7 +16,6 @@ Output: [1, 2, 3]
 Since [3,2,1] is already the largest permutation, we return the smallest permutation.
 
 
-
  Approach:-
 
 The solution can be done in **O(n)** time using the following steps:
