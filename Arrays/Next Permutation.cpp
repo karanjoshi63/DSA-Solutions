@@ -12,7 +12,6 @@ Output: [1, 3, 2]
 Input:  [3, 2, 1]
 Output: [1, 2, 3]
 
-
 Since [3,2,1] is already the largest permutation, we return the smallest permutation.
 
 
